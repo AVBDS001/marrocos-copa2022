@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
-    height: 12vh;
+    height: 11vh;
     justify-content: space-between;
     align-items: center;
 }
@@ -43,22 +43,18 @@ nav li a:hover {
 .main-content-container {
     height: 80vh;
     width: 100vw;
-    margin-top: 75px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.introduction {
-    margin: 10px;
-}
 .introduction h1 {
     color: white;
     text-transform: uppercase;
     font-size: 4em;
     text-shadow: 2px 2px 5px black;
-    margin: 20px;   
+    margin: 10px;   
 }
 .introduction h3 {
     color: white;
@@ -70,13 +66,13 @@ nav li a:hover {
 .history {
     width: 40vw;
     color: white;
-    margin: 10px;
+    margin: 5px;
     font-size: 1.2em;
     text-shadow: 2px 2px 3px black;
     text-align: justify;
 }
 .history h3,h4 {
-    padding: 5px;
+    padding: 10px;
     text-align: center;
 }
 .history div {
@@ -89,7 +85,7 @@ nav li a:hover {
     height: 350px;
 }
 .draft {
-    margin: 20px 50px;
+    margin: 10px 30px;
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -104,24 +100,45 @@ nav li a:hover {
     border: 1px solid white;
     border-radius: 5px;
 }
-
-
-@media(max-width: 700px) {
-    header div img {
+@media(max-width: 760px) {
+    .header-container {
+        height: 5vh;
+        justify-content: center;
+    }
+    .header-container div img {
         display: none;
     }
     .draft {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
+        align-items: center;
     }
 }
-@media(max-width: 650px) {
-    .main-content-container {
-        margin-top: 55px;
+@media(max-width: 540px) {
+    .header-container {
+        flex-direction: column;
+        height: 13vh;
     }
-    section.history {
-        margin: 5px;
+    .menu {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    nav li {
+        padding: 10px;
+    }
+}
+@media(max-width: 380px) {
+    .main-content-container {
+        margin-top: 25px;
+    }
+}
+@media(max-width: 340px) {
+    .main-content-container {
+        margin-top: 200px;
+    }
+    .draft {
+        margin-top: 160px;
     }
 }
